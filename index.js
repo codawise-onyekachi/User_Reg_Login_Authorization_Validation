@@ -43,8 +43,14 @@ mongoose.connect(process.env.MONGODB_URL)
 
 })
 
+// test deployment
+app.get("/", (req, res) => {
+    res.status(200).json({
+        message:"welcome to careerEx Backend Website"
+    })
+})
 //delete all app except one
-app.use(routes)
+app.use("/api", routes)
  
 
 //app
