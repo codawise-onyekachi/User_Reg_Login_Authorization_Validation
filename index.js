@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
         message:"welcome to careerEx Backend Website"
     })
 })
-//delete all app except one
+//delete all app except one 
 app.use("/api", routes)
  
 
